@@ -156,3 +156,33 @@ function flatten(array) {
 const flat = [1, 2, [3, 4]]
 // flat.flat()
 print(flatten(flat))
+
+// 数组转为字符串 join 和 toString
+let arrStr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let resu = arrStr.join('')
+let resu2 = arrStr.toString()
+let resu3 = arrStr.values()
+print(resu)
+print(resu2)
+print(resu3)
+let resu4 = arrStr.splice(3, 1)
+print(resu4)
+print(arrStr)
+let a3 = arrStr.unshift(10, 100)
+print(a3)
+print(arrStr)
+let a4 = arrStr.push(10, 100)
+print(a4)
+print(arrStr)
+let a6 = arrStr.pop()
+print(a6)
+print(arrStr)
+let a7 = arrStr.shift()
+print(a7)
+print(arrStr)
+print(arrStr.reverse())
+print(arrStr.sort((a, b) => a > b))
+
+const sumNum = (...num) => num.reduce((total, item) => total + item)
+
+print(sumNum(1, 2, 3, 4))
